@@ -1,0 +1,62 @@
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  background-color: #1d4ed8;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 75px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 75px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 200px;
+
+}
+
+.hero p {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 50px; /* Adds space between paragraph and buttons */
+}
+
+.get-started,
+.learn-more {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 12px;
+}
+
+.get-started {
+  background-color: white;
+  color: #1d3557;
+  border:2px solid #1d3557
+}
+
+.get-started:hover {
+  background-color: beige;
+}
+
+.learn-more {
+  background-color: white;
+  color: #1d3557;
+  border: 2px solid #1d3557;
+}
+
+.learn-more:hover {
+  background-color: beige;
+}
