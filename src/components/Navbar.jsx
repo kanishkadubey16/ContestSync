@@ -20,7 +20,7 @@ function Navbar() {
 
       <div className="right">
         <button className="sign-in">Sign In</button>
-        <button className="register-btn">Register</button>
+        <button className="register-button">Register</button>
       </div>
     </div>
   );
