@@ -1,0 +1,65 @@
+.cp-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .cp-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cp-subtitle {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+  }
+  
+  .cp-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .cp-step {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .cp-step:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cp-number {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    color: #333;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cp-step-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:black;
+  }
+  
+  .cp-description {
+    font-size: 14px;
+    color: #444;
+  }
+  

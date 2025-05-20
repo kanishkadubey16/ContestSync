@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  width: 100%;
+  width: 100%;height;
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 

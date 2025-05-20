@@ -4,7 +4,8 @@ import HeroSection from './components/HeroSection';
 import './App.css';
 import UpcomingContest from './components/UpcomingContest'; 
 import AllContest from './components/AllContest';
-import FourthPage from './components/FourthPage'; // ✅ import added
+import FourthPage from './components/FourthPage';
+import FifthPage from './components/FifthPage'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <UpcomingContest />  
       <div className="page-wrapper">
         <AllContest />
-        <FourthPage /> {/* ✅ added here */}
+        <FourthPage/>
+        <FifthPage/>
       </div>
     </div>
   );

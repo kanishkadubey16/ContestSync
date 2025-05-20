@@ -98,7 +98,7 @@
   }
   
   .reminder-btn:hover {
-    background: #007bff;
+    background: #0056b3;
   }
   
   .join-btn {
@@ -110,7 +110,6 @@
     background: #0056b3;
   }
   
-  /* Right Side: Image */
   .contest-image img {
     width: 400px;
     border-radius: 10px;

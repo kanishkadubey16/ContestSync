@@ -12,7 +12,6 @@ function Navbar() {
         <ul className="nav-links">
           <li>Home</li>
           <li>Contests</li>
-          <li>Leaderboard</li>
           <li>About</li>
           <li>Contact</li>
         </ul>
@@ -27,6 +26,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-

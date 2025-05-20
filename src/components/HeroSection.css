@@ -27,7 +27,7 @@
 .hero p {
   font-size: 30px;
   color: white;
-  margin-bottom: 50px; /* Adds space between paragraph and buttons */
+  margin-bottom: 50px; 
 }
 
 .get-started,
@@ -46,17 +46,8 @@
   color: #1d3557;
   border:2px solid #1d3557
 }
-
-.get-started:hover {
-  background-color: beige;
-}
-
 .learn-more {
   background-color: white;
   color: #1d3557;
   border: 2px solid #1d3557;
-}
-
-.learn-more:hover {
-  background-color: beige;
 }
