@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 45px;
+  width: 380px;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.auth-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 12px 40px rgba(0, 191, 255, 0.4);
+}
+
+
+.auth-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #00bfff;
+  letter-spacing: 1px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.auth-container input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #00bfff;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00bfff, #007bff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  transform: scale(1.03);
+}
+
+.auth-container p {
+  margin-top: 15px;
+  color: #b2bec3;
+}
+
+.dashboard-container {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  width: 380px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dashboard-container h2 {
+  color: #00bfff;
+}
+
+.dashboard-container button {
+  margin-top: 25px;
+  background: linear-gradient(90deg, #ff4757, #ff6b81);
+}
+
+.dashboard-container button:hover {
+  background: linear-gradient(90deg, #ff6b81, #ff4757);
+  transform: scale(1.05);
+}
