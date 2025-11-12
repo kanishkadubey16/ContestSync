@@ -26,20 +26,16 @@ db.connect(err => {
   }
 });
 
-
 app.post("/api/signup", async (req, res) => {
   try {
     const { name, email, password } = req.body;
-
-    if (!name || !email || !password) {
+    if (!name || !email || !password)
       return res.status(400).json({ message: "All fields are required" });
-    }
 
     db.query("SELECT * FROM users WHERE email = ?", [email], async (err, result) => {
       if (err) return res.status(500).json({ message: "Database error" });
-      if (result.length > 0) {
+      if (result.length > 0)
         return res.status(400).json({ message: "User already exists" });
-      }
 
       const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -58,26 +54,21 @@ app.post("/api/signup", async (req, res) => {
   }
 });
 
-
 app.post("/api/login", (req, res) => {
   const { email, password } = req.body;
 
-  if (!email || !password) {
+  if (!email || !password)
     return res.status(400).json({ message: "Email and password are required" });
-  }
 
   db.query("SELECT * FROM users WHERE email = ?", [email], async (err, result) => {
     if (err) return res.status(500).json({ message: "Database error" });
-    if (result.length === 0) {
+    if (result.length === 0)
       return res.status(400).json({ message: "Invalid email or password" });
-    }
 
     const user = result[0];
-
     const isMatch = await bcrypt.compare(password, user.password_hash);
-    if (!isMatch) {
+    if (!isMatch)
       return res.status(400).json({ message: "Invalid email or password" });
-    }
 
     const token = jwt.sign(
       { id: user.id, email: user.email },
@@ -93,18 +84,15 @@ app.post("/api/login", (req, res) => {
   });
 });
 
-
 app.get("/api/protected", (req, res) => {
   const authHeader = req.headers.authorization;
-  if (!authHeader) {
+  if (!authHeader)
     return res.status(401).json({ message: "No token provided" });
-  }
 
   const token = authHeader.split(" ")[1];
   jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
-    if (err) {
+    if (err)
       return res.status(403).json({ message: "Invalid or expired token" });
-    }
 
     res.status(200).json({
       message: `Welcome ${decoded.email}, you are authorized!`,
