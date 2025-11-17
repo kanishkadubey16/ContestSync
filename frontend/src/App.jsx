@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
-import Signup from "./pages/Signup.jsx";
-import Login from "./pages/Login.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
+import Signup from "./Pages/Signup.jsx";
+import Login from "./Pages/Login.jsx";
 import "./App.css";
+import Dashboard from "./Pages/Dashboard.jsx";
+// created pages 
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
-
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        
       </Routes>
     </Router>
   );
