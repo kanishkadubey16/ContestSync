@@ -17,7 +17,7 @@ export default function Signup() {
     setMessage("⏳ Creating your account...");
     try {
       const res = await API.post("/signup", { name, email, password });
-      setMessage("✅ " + res.data.message);
+      setMessage("✅ "+res.data.message);
       setName("");
       setEmail("");
       setPassword("");
