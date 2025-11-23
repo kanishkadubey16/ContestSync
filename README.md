@@ -1,7 +1,7 @@
 # ContestSync
 
 ## Live Frontend Deployment
-https://contest-sync-pearl.vercel.app/signup
+https://contest-sync-pearl.vercel.app/
 
 ---
 
